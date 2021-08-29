@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator Online</title>
+    <!-- Favicon icon -->
+    <!-- Custom Stylesheet -->
+    <script type="text/javascript"src="calculator.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!-- for styling -->
+</head>
+
+	<html>
+
+<!-- create table -->
+<body class="colo">
+	<br>
+	<br>
+	<br>
+	<div class="calc container-xxl position-relative">
+	<table border="0" class="center">
+		<tr>
+			<td colspan="3"><input type="text" style="background-color:grey;" id="result"/></td>
+			<!-- clr() function will call clr to clear all value -->
+			<td><input type="button" class="btn btn-danger " data-bs-toggle="button" autocomplete="off" value="c" onclick="clr()"/> </td>
+		</tr>
+
+		<tr>
+			<!-- create button and assign value to each button -->
+			<!-- dis("1") will call function dis to display value -->
+			<div class="input-group mb-3">
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="1" onclick="dis('1')"/> </td>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="2" onclick="dis('2')"/> </td>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="3" onclick="dis('3')"/> </td>
+			<td><input type="button" class="btn btn-warning input-group mb-3" data-bs-toggle="button" autocomplete="off" value="/" onclick="dis('/')"/> </td>
+		</div>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="4" onclick="dis('4')"/> </td>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="5" onclick="dis('5')"/> </td>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="6" onclick="dis('6')"/> </td>
+			<td><input type="button" class="btn btn-warning input-group mb-3" data-bs-toggle="button" autocomplete="off" value="-" onclick="dis('-')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="7" onclick="dis('7')"/> </td>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="8" onclick="dis('8')"/> </td>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="9" onclick="dis('9')"/> </td>
+			<td><input type="button" class="btn btn-warning input-group mb-3" data-bs-toggle="button" autocomplete="off" value="+" onclick="dis('+')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="." onclick="dis('.')"/> </td>
+			<td><input type="button" class="btn btn-secondary input-group mb-3" data-bs-toggle="button" autocomplete="off" value="0" onclick="dis('0')"/> </td>
+			<!-- solve function call function solve to evaluate value -->
+			<td><input type="button" class="btn btn-warning input-group mb-3" data-bs-toggle="button" autocomplete="off" value="=" onclick="solve()"/> </td>
+			<td><input type="button" class="btn btn-warning input-group mb-3" data-bs-toggle="button" autocomplete="off" value="*" onclick="dis('*')"/> </td>
+		</tr>
+	</table>
+</div>
+</body>
+
+
+</html>
